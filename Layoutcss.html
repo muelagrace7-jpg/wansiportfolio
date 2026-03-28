@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    background: pink(226, 226, 226);
+    font-size: 17px;
+}
+
+header{
+    width:100%;
+    display:block;
+    background: darkred(249, 108, 179);
+    text-align: center;
+    color:pink;
+    padding:25px;
+    border: 3px solid darkred(227, 202, 240);
+    border-radius:15px;
+    font-size:25px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 10px rgba(240, 62, 169, 0.15);
+}
+
+header p{
+    margin:5px 0 0 0;
+    font-size: 15px;
+} 
+
+main{
+    display:flex;
+    margin:20px;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    list-style-type:none;
+    width: 100%;
+    padding:0;
+    margin:10px;
+    width:220px;
+}
+
+nav li a{
+    display:block;
+    padding:10px;
+    margin:10px 0;
+    background: beige;
+    text-decoration:none;
+    color:darkred;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px darkred;
+    transition: 0.1s;
+}
+
+nav li:nth-child(odd) a:hover{
+    background: darkred;
+    color: darkred;
+}
+
+nav li:nth-child(even) a:hover{
+    background: beige(229, 120, 251);
+    color:pink;
+}
+
+.stylelinks p{
+    margin:3px;
+    color: darkred;
+}
+
+.stylelinks a{
+    margin:3px;
+    text-decoration: underline;
+    color: darkred;
+    font-weight: bold;
+    padding:6px 1px;
+    transition:0.1s;
+    display: inline-block;
+}
+
+.stylelinks a:hover{
+    color:darkred(212, 41, 212);
+}
+
+section{
+    flex:2;
+    border-radius: 20px;
+    box-shadow: 0 6px 11px darkred;
+    background:pink;
+    padding: 10px;
+    margin:0 10px;
+}
+
+aside{
+    flex:1;
+    padding: 20px;
+    margin:0px;
+    background-color:darkred(255, 137, 202);
+    color: darkred;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 11px darkred;
+}
+
+footer{
+    background-color:darkred(249, 108, 179);
+    color: darkred ;
+    margin:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow: 0 6px 11px darkred;
+    border-radius: 20px;
+}  
+
+@media screen and (max-width:600px)
+{
+main{
+    flex-direction:column;
+}
+
+nav ul{
+    width: 100%;
+}
+
+aside, section{
+    width:100%;
+    margin: 10px 0;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+Welcome to My Homepage
+<p>Use the menu to select different Stylesheets</p>
+</header>
+
+<main>
+
+<nav>
+<ul>
+<li><a href="#">Stylesheet 1</a></li>
+<li><a href="#">Stylesheet 2</a></li>
+<li><a href="#">Stylesheet 3</a></li>
+<li><a href="#">Stylesheet 4</a></li>
+<li><a href="#">No Stylesheet</a></li>
+</ul>
+</nav>
+
+<section>
+<h1 style="color: darkred;">Same Page Different Stylesheets</h1>
+
+<div class="stylelinks">
+<p>
+This is a demonstration of how different stylesheets can change the layout of your HTML page.
+You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+<br>
+<a href="#">Stylesheet1,</a> 
+<a href="#">Stylesheet2,</a> 
+<a href="#">Stylesheet3,</a> 
+<a href="#">Stylesheet4,</a> 
+</p>
+
+<h2 style="color: darkred;">No Styles</h2>
+
+<p>
+This page uses DIV elements to group different sections of the HTML page.
+Click here to see how the page looks like with no stylesheet.
+<br>
+<a href="#">No Stylesheet</a> 
+</p>
+</div>
+</section>
+
+<aside>
+<h3 style="color: darkred;" >Side-Bar</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt
+ut laoreet dolore magna aliquam erat volutpat.
+</p>
+</aside>
+
+</main>
+
+<footer>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores aliquam ratione qui quasi consectetur incidunt consequatur dolor. Voluptas ullam voluptate minima, quam pariatur iusto atque accusantium, illum quos consequatur earum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem tenetur veritatis quia non iusto illum reiciendis animi qui deserunt perferendis rem voluptatem numquam soluta quasi culpa, nobis adipisci laboriosam.
+</footer>
+
+</body>
+</html>
