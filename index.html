@@ -1,143 +1,241 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Raziel Grace Muela</title>
 
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #4a0033;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #800020;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+            border: 5px solid #ffb6c1; 
+            object-fit: cover;
+            margin-bottom: 15px;
+            background-color: #fff; 
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #800020;
+            border-bottom: 3px solid #ffb6c1;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #b03060;
+        }
+
+        a {
+            color: #ff4d88;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #800020;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            background: #fffafa;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            border-left: 5px solid #ffb6c1;
+        }
+
+
+        .skills li, .fun-facts li, .love li {
+            background: #ffe6f0;
+            border-left: 5px solid #800020;
+        }
+
+    
+        .languages-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .lang-card {
+            text-align: center;
+            flex: 1;
+            min-width: 100px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #800020;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .socials img {
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .socials img:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+    </style>
+</head>
 <body>
 
-  <h2>Portfolio</h2>
+<header>
+    <img src="Tae.jpeg" width="150" height="150" alt="Raziel's Profile">
+    <h1>RAZIEL GRACE MUELA</h1>
+    <p>📍 Malaya St. Tirik Bucanan, Magalang Pampanga</p>
+    <p>📞 +639647374047</p>
+    <p>✉️ <a href="mailto:muelarazielgrace@gmail.com" style="color: #ffb6c1;">muelarazielgrace@gmail.com</a></p>
+</header>
 
-  <img src="images/raziel.jpg" width="150" height="150" border="2px"><br><br>
+<section>
+    <h2>About Me</h2>
+    <p>
+        I'm a friendly and soft-hearted person, but also strong. Even when things get hard,
+        I keep fighting and pushing forward.
+    </p>
 
-  📧 <a href="mailto:muelarazielgrace@gmail.com">
-    muelarazielgrace@gmail.com
-  </a><br><br>
+    <h3>What I Believe In:</h3>
+    <ul>
+        <li>✨ Mistakes are lessons, not regrets.</li>
+        <li>✨ Everything happens for a reason.</li>
+        <li>✨ God gives challenges we can handle.</li>
+    </ul>
 
-  <h3>RAZIEL GRACE MUELA</h3>
-  Malaya St. Tirik Bucanan Magalang Pampanga<br>
-  📞 +639647374047
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>"IT'S OK TO NOT BE OK, BUT IT'S NOT OK TO STAY THAT WAY."</strong>
+    </p>
+</section>
 
-  <hr>
+<section>
+    <h2>Education</h2>
+    <ul>
+        <li><strong>College:</strong> Pampanga State Agricultural University</li>
+        <li><strong>Senior High:</strong> Andres M. Luciano High School</li>
+        <li><strong>Junior High:</strong> Andres M. Luciano High School</li>
+        <li><strong>Elementary:</strong> Ayala & Bucanan Magalang Pampanga</li>
+    </ul>
+</section>
 
-  <p>
-    Welcome to my Enterprise Data Management Portfolio!
-    This portfolio will reflect soon where i started and how I handled things.
-    especially during times when i almost give up, but still managed to push
-    through and what I learned in things.
-  </p>
+<section>
+    <h2>Languages</h2>
+    <div class="languages-container">
+        <div class="lang-card">
+            <img src="Java.png" width="60" alt="Java"><br>Java
+        </div>
+        <div class="lang-card">
+            <img src="/Pythoon.jpeg" width="60" alt="Python"><br>Python
+        </div>
+    </div>
+</section>
 
-  <h2>🌟 About Me</h2>
-  <p>
-    Im a Friendly person, and i feel comfortable with people who are truly
-    willing to understand me no matter what situations come up.
-    Im very Softhearted person, but also strong even if I don't know
-    if i can handle something, l'll keep fighting.
-  </p>
+<section>
+    <h2>Projects</h2>
+    <h3>Midterms</h3>
+    <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <li><a href="Task1.html">Lab Task 1</a></li>
+        <li><a href="Task2.html">Lab Task 2</a></li>
+        <li><a href="Task3.html">Lab Task 3</a></li>
+        <li><a href="Task4.html">Lab Task 4</a></li>
+        <li><a href="Task5.html">Lab Task 5</a></li>
+        <li><a href="Task6.html">Lab Task 6</a></li>
+        <li><a href="/Task7.html"
+        >Lab Task 7</a></li>
+        <li><a href="Task8.html">Lab Task 8</a></li>
+    </ul>
 
-  <h3>What I Believe In:</h3>
-  <ul>
-    <li>🤝 I don't turn every mistake I've made into regret. I'll make them into lesson learned so I won't repeat them next time.</li>
-    <li>💪 Everything that happens to us has a purpose.</li>
-    <li>🙏 Whatever situation has been given to me, the lord knows I can handle it that's why I'm in this situation right now.</li>
-  </ul>
+    <h3>Finals</h3>
+    <p style="font-style: italic; color: #888;">Coming Soon…</p>
+</section>
 
-  <p>
-    IT'S OK TO NOT BE OK BUT IT'S NOT OK TO STAY THAT WAY.
-  </p>
+<section class="love">
+    <h2>I Love</h2>
+    <ul>
+        <li>☕ Coffee</li>
+        <li>💐 Making clips & bouquets</li>
+        <li>🎵 Listening to music</li>
+        <li>🐝 Jollibee</li>
+        <li>💃 Dancing</li>
+        <li>🍝 Spaghetti</li>
+    </ul>
+</section>
 
-  <hr>
+<section class="fun-facts">
+    <h2>Fun Facts</h2>
+    <ul>
+        <li>💻 Debugged for 3 hours because of a missing semicolon</li>
+        <li>🌙 Best coding at 3 AM</li>
+        <li>🤔 Code works... but I don't know why</li>
+    </ul>
+</section>
 
-  <h2>🎓 Education</h2>
-  <ul>
-    <li>College: Pampanga State Agricultural University ✅</li>
-    <li>Senior: Andres M. Luciano High School</li>
-    <li>Junior: Andres M. Luciano High School</li>
-    <li>Elementary: Ayala Magalang Pampanga Bucanan Magalang Pampanga</li>
-  </ul>
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>📅 Time Management</li>
+        <li>😊 Positive Attitude</li>
+    </ul>
+</section>
 
-  <hr>
+<section style="text-align: center;">
+    <h2>Connect With Me</h2>
+    <div class="socials">
+        <a href="mailto:muelarazielgrace@gmail.com"><img src="gmail.png" width="40" alt="Email"></a>
+        <a href="https://m.facebook.com/razielgrace27/"><img src="Facebook.png" width="40" alt="Facebook"></a>
+        <a href="https://www.tiktok.com/@raz_0712"><img src="Tiktok.png" width="40" alt="Tiktok"></a>
+    </div>
+</section>
 
-  <h2>💻 Languages I Used Before</h2>
-  <ul>
-    <li><img src="images/java.jpg" width="100" height="70"></li>
-    <li><img src="images/python.jpg" width="100" height="70"></li>
-  </ul>
-
-  <hr>
-<h2>My Projects</h2>
-<h4>MIDETERMS</h4>
-
-<p><b>MIDTERM LAB TASK 1:</b> <a href="MIDTERM/LAB 1/index.html" target= "_blank">LABORATORY TASK 1</a></p>
-<br><b>MIDTERM LAB TASK 2:</b> <a href="MIDTERM/LAB 2/index.html" target="_blank">LABORATORY TASK 2</a>
-<br> <b>MIDTERM LAB TASK 3:</b> <a href="Recpro.html" target="_blank">LABORATORY TASK 3</a>
-<br> <b>MIDTERM LAB TASK 4:</b> <a href="Imagemaps.html" target="_blank">LABORATORY TASK 4</a>
-<br> <b>MIDTERM LAB TASK 5:</b> <a href="ResumeCss.html" target="_blank">LABORATORY TASK 5</a>
-<br> <b>MIDTERM LAB TASK 6:</b> <a href="Dispro.html" target="_blank">LABORATORY TASK 6</a>
-<br> <b>MIDTERM LAB TASK 7:</b> <a href="Semantic.html" target="_blank">LABORATORY TASK 7</a>
-<br> <b>MIDTERM LAB TASK 8:</b> <a href="Layoutcss.html" target="_blank">LABORATORY TASK 8</a>
-<br> 
-</p>
-<img src="" style="width:250px;">
-
-  <hr>
-
-  <h2>🎓 Finals</h2>
-  <ul>
-    <li>Final Lab Task 1: Database Creation</li>
-    <li>Final Lab Task 2: Transforming ER Model</li>
-    <li>Final Lab Task 3: Table Manipulation</li>
-    <li>Final Lab Task 5: Inventory Insights DB</li>
-    <li>Final Lab Task 6: MongoDB Practice</li>
-  </ul>
-
-  <p>🔥 Coming Soon…</p>
-
-  <hr>
-
-  <h2>❤️ I Love:</h2>
-  <ul>
-    <li>☕ Coffee – it’s my fuel for productivity!</li>
-    <li>🎀 Making clip and Bouquet</li>
-    <li>🎧 Listening to music while Review</li>
-    <li>🐝 Jollibee – because it’s my favorite!</li>
-    <li>💃 Dancing</li>
-    <li>🍝 Spaghetti</li>
-  </ul>
-
-  <hr>
-
-  <h2>⚡ Fun Fact About Me:</h2>
-  <ul>
-    <li>💡 I once spent 3 hours debugging, only to realize it was a missing semicolon. 😅</li>
-    <li>🌙 I do my best coding at 3 AM when the world is silent!</li>
-    <li>🤷 My code works! But… I have no idea why.</li>
-  </ul>
-
-  <hr>
-
-  <h2>📌 Skills</h2>
-  <ul>
-    <li>⏰ Time Management</li>
-    <li>😊 Positive Attitude</li>
-  </ul>
-
-  <hr>
-
-  <h2>📞 Click Below to Connect with Me!</h2>
-
-  <a href="https://mail.google.com" target="_blank">
-    <img src="images/gmail.jpg" width="50" height="50">
-  </a>
-
-  <a href="https://m.facebook.com/razielgrace27/" target="_blank">
-    <img src="images/facebook.jpg" width="50" height="50">
-  </a>
-
-  <a href="https://www.tiktok.com/@raz_0712" target="_blank">
-    <img src="images/tiktok.jpg" width="50" height="50">
-  </a>
+<footer>
+    <p>© 2026 zielly | Portfolio</p>
+</footer>
 
 </body>
 </html>
