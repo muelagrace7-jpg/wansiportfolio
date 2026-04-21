@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Task</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Part 1 Styles */
+        .part1 {
+            margin-bottom: 40px;
+        }
+
+        /* 12a: 2 items - 200px | 75px */
+        .flex-2a {
+            display: flex;
+            margin: 10px 0;
+        }
+        .flex-2a .item1 {
+            width: 200px;
+            background: lightblue;
+            padding: 5px;
+        }
+        .flex-2a .item2 {
+            width: 75px;
+            background: lightpink;
+            padding: 5px;
+        }
+
+        /* 12b: 3 items - 50px | remaining | 75px */
+        .flex-2b {
+            display: flex;
+            margin: 10px 0;
+        }
+        .flex-2b .item1 {
+            width: 50px;
+            background: lightpink;
+            padding: 5px;
+        }
+        .flex-2b .item2 {
+            flex: 1; /* Takes remaining space */
+            background: lightpink;
+            padding: 5px;
+        }
+        .flex-2b .item3 {
+            width: 75px;
+            background: lightblue;
+            padding: 5px;
+        }
+
+        /* 12c: 4 items spread evenly */
+        .flex-2c {
+            display: flex;
+            margin: 10px 0;
+        }
+        .flex-2c .item {
+            flex: 1; /* Equal width for all */
+            background: lightpink;
+            padding: 5px;
+            text-align: center;
+        }
+
+        /* 12d: Height 50px + gray border */
+        .flex-2d {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            border: 1px solid gray;
+            margin: 10px 0;
+            padding: 0 10px;
+        }
+        .flex-2d .item {
+            background: lightpink;
+            padding: 5px;
+        }
+
+        /* Part 2: Responsive Layout */
+        .part2 {
+            border: 1px solid #ccc;
+        }
+
+        .header, .footer {
+            background: #f0e6d6;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .main-content {
+            display: flex;
+        }
+
+        .section-left, .section-right {
+            flex: 1;
+            background: #4caf50;
+            border: 2px solid #cddc39;
+            padding: 20px;
+            min-height: 150px;
+        }
+
+        /* Breakpoint 1: 800px and above (default) */
+        @media (min-width: 800px) {
+            .main-content {
+                flex-direction: row;
+            }
+        }
+
+        /* Breakpoint 2: 400px and below */
+        @media (max-width: 400px) {
+            .main-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Part 1</h2>
+
+    <!-- 12a -->
+    <h4>12a. Flexbox with 2 items (200px | 75px)</h4>
+    <div class="flex-2a">
+        <div class="item1">200px</div>
+        <div class="item2">75px</div>
+    </div>
+
+    <!-- 12b -->
+    <h4>12b. Flexbox with 3 items (50px | remaining | 75px)</h4>
+    <div class="flex-2b">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+    </div>
+
+    <!-- 12c -->
+    <h4>12c. Flexbox with 4 items (spread evenly)</h4>
+    <div class="flex-2c">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+
+    <!-- 12d -->
+    <h4>12d. Flexbox with height 50px + gray border</h4>
+    <div class="flex-2d">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+    </div>
+
+    <h2>Part 2: Responsive Layout</h2>
+    <div class="part2">
+        <div class="header">This is a Header</div>
+        <div class="main-content">
+            <div class="section-left">Section left nav</div>
+            <div class="section-right">Section right nav</div>
+        </div>
+        <div class="footer">This is a Footer</div>
+    </div>
+</body>
+</html>
